@@ -2,22 +2,12 @@
 <html>
 	<head>
 		<title>IJsbrand van Prattenburg</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-			<link rel="stylesheet" href="css/style-noscript.css" />
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="loading">
+	<body class="is-preload">
 		<div id="wrapper">
 			<div id="bg"></div>
 			<div id="overlay"></div>
@@ -26,24 +16,36 @@
 				<!-- Header -->
 					<header id="header">
 						<h1>IJsbrand van Prattenburg</h1>
-						<p>Software Engineer &nbsp;&bull;&nbsp; Domotica addict &nbsp;&bull;&nbsp;</p>
+						<p>Software Engineer &nbsp;&bull;&nbsp; Domotica addict &nbsp;&bull;&nbsp; Magento, Laravel</p>
 						<nav>
 							<ul>
-								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+								<li><a href="https://www.linkedin.com/in/ijsbrand-van-prattenburg-39b91547" class="icon fa-linkedin"
+											 target="_blank"><span class="label">LinkedIn</span></a>
+								</li>
+								<li><a href="https://www.esser-emmerik.nl"  class="icon fa-briefcase" target="_blank">
+									<span class="label">Werk</span></a>
+								</li>
+								<li><a href="https://github.com/iceburg1991" class="icon fa-github" target="_blank">
+									<span class="label">Github</span></a>
+								</li>
+								<li><a href="mailto:ijsbrand@esser-emmerik.nl" class="icon fa-envelope-o">
+									<span class="label">Email</span></a>
+								</li>
 							</ul>
 						</nav>
 					</header>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright">&copy; Iceburg</span>
+						<span class="copyright">&copy; 2018 IJsbrand van Prattenburg</span>
 					</footer>
-				
+
 			</div>
 		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
 	</body>
 </html>
